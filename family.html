@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family</title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e4d7c5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 50px;
+            box-sizing: border-box;
+            padding-top: 100px; 
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+            color: #3b3426;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease-in-out;
+        }
+
+       .family-container {
+            width: 100%;
+            max-width: 1000px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 20px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .family-container h2 {
+            color: #3b3426;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .family-info {
+            color: #3b3426;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            text-align: left;
+            font-size: 1.2em;
+            transition: color 0.3s ease-in-out;
+        }
+
+         ul.family-list {
+            text-align: justify; 
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+        }
+
+        ul.family-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul.family-list li {
+            margin-bottom: 20px;
+            text-align: justify;
+            transition: margin-bottom 0.3s ease-in-out;
+        }
+
+      .family-image-rectangular {
+         width: 700px; 
+         height: 400px; 
+         object-fit: cover;
+         margin-bottom: 20px; 
+         border: 3px solid #d2b48c;
+         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+         display: block;
+         margin-left: auto;
+         margin-right: auto; 
+         border-radius: 15px; 
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .family-image-square {
+            width: 300px; 
+            height: 300px; 
+            object-fit: cover;
+            margin-bottom: 20px; 
+            border: 3px solid #d2b48c;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-left: 10px; 
+            margin-right: 10px;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .family-image-rectangular:hover,
+        .family-image-square:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #3b3426;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .navbar div {
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.3);
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .navbar div:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-5px);
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.1em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #d2b48c;
+            transition: color 0.3s ease-in-out;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+            background-color: #3b3426;
+            color: white;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        /* Added styling for the paragraph to match font and spacing */
+        .family-container p {
+            text-align: justify;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            transition: color 0.3s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+         <div><a href="index.html"> ✦ Home ✦</a></div>
+        <div><a href="aboutme.html"> ✦ About Me ✦</a></div>
+        <div><a href="experience.html"> ✦ Experience ✦</a></div>
+        <div><a href="education.html"> ✦ Education ✦</a></div>
+        <div><a href="family.html"> ✦ Family ✦</a></div>
+        <div><a href="gallery.html"> ✦ Gallery ✦</a></div>
+        <div><a href="interest.html"> ✦ Interest ✦</a></div>
+    </div>
+
+    <h1>⋆ ˚｡⋆୨୧˚ Family ⋆ ˚｡⋆୨୧˚⋆</h1>
+    <div class="family-container">
+        <h2>◤ Meet My Family ◢</h2>
+
+        <img src="family1.jpg" alt="My Family" class="family-image-rectangular">
+
+        <p>Family is the heart of everything I do. They are my greatest supporters and my constant source of inspiration, always by my side to encourage and guide me. Their love and belief in me give me the strength to push forward through any challenge, reminding me that I am never alone. Let me introduce my wonderful family.</p>
+
+        <ul class="family-list">
+            <li>
+                <img src="family2.jpg" alt="Parents' Picture" class="family-image-rectangular">
+                <strong>My Parents:</strong> Together, my parents are the pillars of our family. My father, a hardworking individual, instills discipline and perseverance, always leading by example with his strong work ethic and determination. My mother, the heart of our home, spreads love, warmth, and guidance, offering us unwavering support and care. Their combined strength and wisdom create a balance that provides stability and love, shaping the foundation of our family and inspiring me to strive for both hard work and kindness in everything I do.
+            </li>
+
+            <li>
+                <img src="siblings1.jpg" alt="Sibling 1 Picture" class="family-image-square">
+                <img src="siblings2.jpg" alt="Sibling 2 Picture" class="family-image-square">
+                <img src="siblings3.jpg" alt="Sibling 3 Picture" class="family-image-square">
+                <img src="siblings4.jpg" alt="Sibling 4 Picture" class="family-image-square">
+                <img src="siblings5.jpg" alt="Sibling 5 Picture" class="family-image-square">
+                <img src="siblings6.jpg" alt="Sibling 6 Picture" class="family-image-square">
+                <strong>Siblings:</strong> I am the second of five siblings, and each one of us brings something unique to our family dynamic. My older sister offers guidance and wisdom, while my younger brothers and sisters bring energy and joy. Together, we share a strong bond of love, trust, and support, always standing by each other through challenges and celebrations. Our family is united by an unbreakable bond that only strengthens with time.
+            </li>
+        </ul>
+    </div>
+
+   
+
+</body>
+</html>

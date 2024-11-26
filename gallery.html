@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e4d7c5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 50px;
+            box-sizing: border-box;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+            color: #3b3426;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 2em;
+            color: #3b3426;
+            text-align: center;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            border: 2px solid #3b3426;
+            border-radius: 8px;
+            padding: 8px 16px;
+            display: inline-block;
+            background-color: #ffffff;
+        }
+
+        .gallery-container {
+            width: 100%;
+            max-width: 1000px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .gallery-container img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            border: 3px solid #d2b48c;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        p, ul.family-list {
+            text-align: justify;
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        ul.family-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul.family-list li {
+            margin-bottom: 20px;
+        }
+
+         .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #3b3426;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .navbar div {
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.3);
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .navbar div:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-5px);
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.1em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #d2b48c;
+            transition: color 0.3s ease-in-out;
+        }
+
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+            background-color: #3b3426;
+            color: white;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="navbar">
+        <div><a href="index.html"> ✦ Home ✦</a></div>
+        <div><a href="aboutme.html"> ✦ About Me ✦</a></div>
+        <div><a href="experience.html"> ✦ Experience ✦</a></div>
+        <div><a href="education.html"> ✦ Education ✦</a></div>
+        <div><a href="family.html"> ✦ Family ✦</a></div>
+        <div><a href="gallery.html"> ✦ Gallery ✦</a></div>
+        <div><a href="interest.html"> ✦ Interest ✦</a></div>
+    </div>
+
+    
+    <h1>⋆ ˚｡⋆୨୧˚ Gallery ⋆ ˚｡⋆୨୧˚⋆</h1>
+
+   
+ 	<h2>˚ ༘♡ ⋆｡˚ My Beloved Cat ˚ ༘♡ ⋆｡˚</h2>
+	<div class="gallery-container">
+ 	   <img src="cat1.jpg" alt="Cat 1">
+    	<img src="cat2.jpg" alt="Cat 2">
+    	<img src="cat3.jpg" alt="Cat 3">
+    	<img src="cat4.jpg" alt="Cat 4">
+    	<img src="cat5.jpg" alt="Cat 5">
+    	<img src="cat6.jpg" alt="Cat 6">
+    
+    	    <video controls width="300" style="margin-top: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); border: 3px solid #d2b48c;">
+        	<source src="cumi_video.mp4" type="video/mp4">
+         </video>
+        <p>This is my cat, Cumi. We’ve had the joy of raising her since 2019, when she was just a tiny, playful kitten. Over the years, we’ve watched her grow from a small, curious baby into the confident and loving cat she is today. Cumi has always had a special charm, with her playful antics and sweet personality winning over everyone in our family. As she’s grown, she still enjoys snuggling up with us and showing affection. Her playful nature never fades, and she has a way of making even the most ordinary days feel special. Cumi has truly become a cherished member of our family, and we are so grateful to have been a part of her journey from kittenhood to now.</p>
+    </div>
+
+   
+    <h2>˚ ༘♡ ⋆｡˚  My High School Friends ˚ ༘♡ ⋆｡˚</h2>
+    <div class="gallery-container">
+        <img src="hs1.jpg" alt="High School 1">
+        <img src="hs2.jpg" alt="High School 2">
+        <img src="hs3.jpg" alt="High School 3">
+        <img src="hs4.jpg" alt="High School 4">
+        <img src="hs5.jpg" alt="High School 5">
+        <img src="hs6.jpg" alt="High School 6">
+        <p>This is my group of high school friends, with whom I’ve shared countless memories since 2017. From the moment we met, our bond grew stronger as we navigated the ups and downs of school life together. We’ve supported each other through challenges, celebrated each other’s successes, and created a lifetime of inside jokes and shared experiences. Over the years, our friendship has only deepened, and despite the changes that come with time, we continue to stay connected. Each one of them brings something special to our group, whether it’s humor, wisdom, or unwavering loyalty. I’m grateful for having this friendship with them, and I know that no matter where life takes us, we will always be there for each other.</p>
+    </div>
+
+    
+    <h2>˚ ༘♡ ⋆｡˚ My Diploma Friends ˚ ༘♡ ⋆｡˚</h2>
+    <div class="gallery-container">
+        <img src="diploma1.jpg" alt="Diploma 1">
+        <img src="diploma2.jpg" alt="Diploma 2">
+        <img src="diploma3.jpg" alt="Diploma 3">
+        <img src="diploma4.jpg" alt="Diploma 4">
+        <img src="diploma5.jpg" alt="Diploma 5">
+        <img src="diploma6.jpg" alt="Diploma 6">
+
+	<video controls width="300" style="margin-top: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); border: 3px solid #d2b48c;">
+        	<source src="dip1_video.mp4" type="video/mp4">
+         </video>
+
+  	 <video controls width="300" style="margin-top: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); border: 3px solid #d2b48c;">
+        	<source src="dip2_video.mp4" type="video/mp4">
+         </video>
+
+
+        <p>This is my group of diploma friends, and we’ve known each other since semester 1. From the very beginning, we formed a strong bond that has only grown over the years. We’ve faced the challenges of assignments, exams, and projects together, supporting one another through both the highs and lows. As we approach our final semester, it’s clear that the memories and experiences we’ve shared will stay with us long after graduation. I’m grateful for the laughter, encouragement, and companionship they’ve given me throughout our time together.</p>
+    </div>
+
+  
+    <h2>˚ ༘♡ ⋆｡˚  My Cherished  Utopia ˚ ༘♡ ⋆｡˚</h2>
+    <div class="gallery-container">
+        <img src="dream1.jpg" alt="Dream 1">
+        <img src="dream2.jpg" alt="Dream 2">
+        <img src="dream3.jpg" alt="Dream 3">
+        <img src="dream4.jpeg" alt="Dream 4">
+        <img src="dream5.jpg" alt="Dream 5">
+        <img src="dream6.jpg" alt="Dream 6">
+	<p>This is a glimpse into the place I’ve always dreamed of visiting which is Edinburgh. The history, culture, and stunning architecture of this city have always fascinated me, and I can’t wait for the day I finally get to experience it in person. Edinburgh’s charming streets, the majestic castle overlooking the city, and its rich literary history are just a few of the reasons why it’s my dream destination. I’ve always felt a deep connection to the city, and I hope to visit it one day soon to explore all it has to offer.</p>
+    </div>
+
+   
+</body>
+</html>
